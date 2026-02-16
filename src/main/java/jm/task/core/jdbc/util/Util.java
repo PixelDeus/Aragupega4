@@ -41,7 +41,6 @@ public class Util {
             try {
                 Configuration configuration = new Configuration();
 
-                // Настройки Hibernate
                 Properties settings = new Properties();
                 settings.put(Environment.DRIVER, DB_DRIVER);
                 settings.put(Environment.URL, DB_URL);
