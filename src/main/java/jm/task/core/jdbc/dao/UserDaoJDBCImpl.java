@@ -100,7 +100,7 @@ public class UserDaoJDBCImpl implements UserDao {
 
     @Override
     public void cleanUsersTable() {
-        String sql = "DELETE FROM users";
+        String sql = "TRUNCATE TABLE users";
 
         try (Connection connection = Util.getConnection();
              Statement statement = connection.createStatement()) {
